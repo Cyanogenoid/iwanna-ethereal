@@ -128,6 +128,15 @@ if (global.difficulty &gt; 1)  //destroy if on a higher difficulty than hard
 
 if (canSave &amp;&amp; instance_exists(objPlayer) &amp;&amp; global.grav == 1)
 {
+    // only save if player is standing on ground
+    with (objPlayer)
+    {
+        true_y = y - 23;
+        if (!(other.y &lt;= true_y &amp;&amp; true_y &lt;= other.y + 1))
+        {
+            return undefined;
+        }
+    }
     canSave = 0;    //make it so that the player can't save again immediately
     alarm[0] = 30;  //set alarm so the player can save again
     image_index = 1;
