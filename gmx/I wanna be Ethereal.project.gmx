@@ -268,6 +268,18 @@
       <room>rooms\rTest</room>
     </rooms>
     <room>rooms\rTemplate</room>
+    <rooms name="stage 1">
+      <room>rooms\rScreen1_1</room>
+      <room>rooms\rScreen1_2</room>
+      <room>rooms\rScreen1_3</room>
+      <room>rooms\rScreen1_4</room>
+    </rooms>
+    <rooms name="stage 2">
+      <room>rooms\rScreen2_1</room>
+      <room>rooms\rScreen2_2</room>
+      <room>rooms\rScreen2_3</room>
+      <room>rooms\rScreen2_4</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
