@@ -1,6 +1,6 @@
 //sets configurable variables
 
-global.debugMode = 0;       //enables debug keys (check objWorld step to see all of them), make sure to set this to 0 before releasing your game
+global.debugMode = 1;       //enables debug keys (check objWorld step to see all of them), make sure to set this to 0 before releasing your game
 global.debugVisuals = 1;    //enables changing the color/alpha of player when infjump/god mode are toggled, make sure to disable this if you want to change the player's image_alpha or image_blend
 global.debugOverlay = 0;    //enables showing the debug text overlay (shows player location, align, etc.)
 global.debugOverlayColor = c_black; //sets the color for the debug overlay text
