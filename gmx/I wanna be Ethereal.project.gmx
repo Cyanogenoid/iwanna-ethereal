@@ -258,15 +258,6 @@
       <room>rooms\rOptions</room>
       <room>rooms\rDifficultySelect</room>
     </rooms>
-    <rooms name="sample">
-      <room>rooms\rStage01</room>
-      <room>rooms\rCherryBoss</room>
-      <room>rooms\rStage02</room>
-      <room>rooms\rMiku</room>
-      <room>rooms\rEnd</room>
-      <room>rooms\rSampleRoom</room>
-      <room>rooms\rTest</room>
-    </rooms>
     <room>rooms\rTemplate</room>
     <rooms name="stage 1">
       <room>rooms\rScreen1_1</room>
@@ -280,6 +271,7 @@
       <room>rooms\rScreen2_3</room>
       <room>rooms\rScreen2_4</room>
     </rooms>
+    <room>rooms\rEnd</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
