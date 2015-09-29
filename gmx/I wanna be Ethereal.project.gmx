@@ -10,14 +10,13 @@
       <sound>sound\sndDJump</sound>
       <sound>sound\sndWallJump</sound>
       <sound>sound\sndShoot</sound>
-      <sound>sound\sndDeath</sound>
       <sound>sound\sndItem</sound>
       <sound>sound\sndBlockChange</sound>
       <sound>sound\sndBossHit</sound>
       <sound>sound\sndCherry</sound>
       <sound>sound\sndGlass</sound>
       <sound>sound\sndSpikeTrap</sound>
-      <sound>sound\sndSave</sound>
+      <sound>sound\sndDeath</sound>
     </sounds>
     <sounds name="music">
       <sound>sound\musGuyRock</sound>
