@@ -18,7 +18,7 @@ global.startRoom = rScreen1_1;    //sets which room to begin with
 
 global.menuMode = 0;            //sets whether to use a warp room or a menu for selecting difficulty (0 = warp room, 1 = menu)
 global.menuSound = sndJump;     //sets what sound to use for navigating the main menu
-global.deathMusicMode = 2;      //sets whether or not to play death music (0 = no death music, 1 = instantly pause current music, 2 = fade out current music)
+global.deathMusicMode = 0;      //sets whether or not to play death music (0 = no death music, 1 = instantly pause current music, 2 = fade out current music)
 global.adAlign = 0;             //sets whether or not to enable A/D align
 global.timeWhenDead = 1;        //sets whether or not to count the timer when the player is dead
 global.edgeDeath = 1;           //sets whether to kill the player when he leaves the room
