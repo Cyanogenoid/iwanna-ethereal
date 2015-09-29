@@ -15,6 +15,7 @@
       <sound>sound\sndBossHit</sound>
       <sound>sound\sndCherry</sound>
       <sound>sound\sndGlass</sound>
+      <sound>sound\sndSave</sound>
       <sound>sound\sndSpikeTrap</sound>
       <sound>sound\sndDeath</sound>
     </sounds>
