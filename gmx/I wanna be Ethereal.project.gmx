@@ -107,6 +107,7 @@
       <sprite>sprites\sprSecretItem</sprite>
       <sprite>sprites\sprBossItem</sprite>
     </sprites>
+    <sprite>sprites\sprDot</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bAllTiles</background>
@@ -250,6 +251,8 @@
       <object>objects\objBossIndicator</object>
       <object>objects\objGameClear</object>
     </objects>
+    <object>objects\objSphereDot</object>
+    <object>objects\objSphere</object>
   </objects>
   <rooms name="rooms">
     <rooms name="init">
