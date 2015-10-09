@@ -38,7 +38,7 @@ for (i = -limit; i &lt;= limit; i++) {
             dot.u = i / norm
             dot.v = j / norm
             dot.w = k / norm
-            dot.image_blend = merge_color(c_blue, c_red, dot.w)
+            dot.image_blend = merge_color(c_blue, c_red, 0.5 + dot.w/2)
         }
     }
 }

@@ -50,14 +50,14 @@ diameter = 400
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// rotate
-rad = 0.05
-u = cos(rad)*u + sin(rad)*w
-v = v
-w = -sin(rad)*u + cos(rad)*w
-
-// update depth information
-depth = -w
+            <string>// apply rotation matrix
+rad = 0.01
+prev_u = u
+prev_v = v
+prev_w = w
+u = cos(rad)*prev_u + sin(rad)*prev_w
+v = prev_v
+w = -sin(rad)*prev_u + cos(rad)*prev_w
 
 // map 3d coordinates (u, v, w) into 2d (x, y)
 // https://en.wikipedia.org/wiki/3D_projection#Perspective_projection
@@ -79,7 +79,13 @@ y *= 200;
 x += origin_x
 y += origin_y
 
-image_blend = merge_color(c_red, c_white, 0.5 + w/2)
+
+// update object properties to reflect new position
+depth = -w
+scale = 0.75 + w/4
+image_xscale = scale
+image_yscale = scale
+image_alpha = 0.75 + w/4
 </string>
           </argument>
         </arguments>
