@@ -18,7 +18,7 @@ global.dAlignButton = file_bin_read_byte(f);
 global.muteMusic = file_bin_read_byte(f);
 
 global.volumeLevel = file_bin_read_byte(f);
-audio_master_gain(global.volumeLevel/100);
+scrInitSoundGain();
 
 global.fullscreenMode = file_bin_read_byte(f);
 window_set_fullscreen(global.fullscreenMode);

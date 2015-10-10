@@ -14,8 +14,8 @@ global.aAlignButton = ord("A");
 global.dAlignButton = ord("D");
 global.muteMusic = false;
 
-global.volumeLevel = 100;
-audio_master_gain(global.volumeLevel/100);
+global.volumeLevel = 80;
+scrInitSoundGain();
 
 global.fullscreenMode = false;
 window_set_fullscreen(global.fullscreenMode);
