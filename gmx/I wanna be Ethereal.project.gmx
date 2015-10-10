@@ -266,12 +266,6 @@
       <room>rooms\rScreen1_3</room>
       <room>rooms\rScreen1_4</room>
     </rooms>
-    <rooms name="stage 2">
-      <room>rooms\rScreen2_1</room>
-      <room>rooms\rScreen2_2</room>
-      <room>rooms\rScreen2_3</room>
-      <room>rooms\rScreen2_4</room>
-    </rooms>
     <room>rooms\rEnd</room>
   </rooms>
   <help>
