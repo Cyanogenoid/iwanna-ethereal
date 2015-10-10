@@ -64,6 +64,8 @@ for (group = 0; group &lt; max_groups; group++) {
             d.v = pv
             d.w = pw
             d.image_blend = colour
+            d.radius_x = 16 * image_xscale
+            d.radius_y = 16 * image_yscale
         }
     }
 }

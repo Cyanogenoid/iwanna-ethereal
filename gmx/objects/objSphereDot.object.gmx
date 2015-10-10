@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>origin_x = x
 origin_y = y
-radius = 16
+radius_x = 16
+radius_y = 16
 </string>
           </argument>
         </arguments>
@@ -63,18 +64,18 @@ w = -sin(rad)*prev_u + cos(rad)*prev_w
 // https://en.wikipedia.org/wiki/3D_projection#Perspective_projection
 c_x = 0  // in front of sphere
 c_y = 0
-c_z = 10
+c_z = 16
 e_x = 0  // in front of sphere
 e_y = 0
-e_z = 12
+e_z = 15
 d_x = u - c_x
 d_y = v - c_y
 d_z = w - c_z
 x = e_z / d_z * d_x - e_x
 y = e_z / d_z * d_y - e_x
 
-x *= radius;
-y *= radius;
+x *= radius_x;
+y *= radius_y;
 
 x += origin_x
 y += origin_y
