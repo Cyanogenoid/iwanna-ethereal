@@ -25,20 +25,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>limit = 5;
+            <string>max_groups = 4
+max_lines = 8
+max_dots = 16
+line_spread = 0.1
 
-for (i = -limit; i &lt;= limit; i++) {
-    for (j = -limit; j &lt;= limit; j++) {
-        for (k = -limit; k &lt;= limit; k++) {
-            norm = sqrt(sqr(i) + sqr(j) + sqr(k))
-            if (norm == 0) {
-                continue
-            }
-            dot = instance_create(x, y, objSphereDot)
-            dot.u = i / norm
-            dot.v = j / norm
-            dot.w = k / norm
-            dot.image_blend = merge_color(c_blue, c_red, 0.5 + dot.w/2)
+for (group = 0; group &lt; max_groups; group++) {
+    gu = 0
+    gv = power(-1, group)  // flip every second group on its head
+    gw = 0
+    group_offset = group/max_groups * 2 * pi  // spin group evenly around y-axis
+    for (line = 0; line &lt; max_lines; line++) {
+        line_offset = (line - (max_lines - 1) / 2) * line_spread
+        if (line == 0 or line == max_lines - 1) {
+            colour = $f7ab00
+        } else {
+            colour = c_white
+        }
+        for (dot = 0; dot &lt; max_dots; dot++) {
+            off = group_offset + line_offset
+            theta = pi * (dot+1)/(max_dots+1)
+            d = instance_create(x, y, objSphereDot)
+
+            tu = gu
+            tv = gv * cos(theta) - gw * sin(theta)
+            tw = gv * sin(theta) + gw * cos(theta)
+            d.u =  tu * cos(off) + tw * sin(off)
+            d.v =  tv
+            d.w = -tu * sin(off) + tw * cos(off)
+            d.image_blend = colour
         }
     }
 }
