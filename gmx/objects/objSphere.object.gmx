@@ -29,6 +29,7 @@
 max_lines = 8
 max_dots = 16
 line_spread = 0.1
+posttheta = pi/4
 
 for (group = 0; group &lt; max_groups; group++) {
     gu = 0
@@ -50,9 +51,18 @@ for (group = 0; group &lt; max_groups; group++) {
             tu = gu
             tv = gv * cos(theta) - gw * sin(theta)
             tw = gv * sin(theta) + gw * cos(theta)
-            d.u =  tu * cos(off) + tw * sin(off)
-            d.v =  tv
-            d.w = -tu * sin(off) + tw * cos(off)
+            ru =  tu * cos(off) + tw * sin(off)
+            rv =  tv
+            rw = -tu * sin(off) + tw * cos(off)
+            d.u = ru
+            d.v = rv
+            d.w = rw
+            pu = ru
+            pv = rv * cos(posttheta) - rw * sin(posttheta)
+            pw = rv * sin(posttheta) + rw * cos(posttheta)
+            d.u = pu
+            d.v = pv
+            d.w = pw
             d.image_blend = colour
         }
     }
