@@ -116,7 +116,7 @@ if (canSave &amp;&amp; instance_exists(objPlayer) &amp;&amp; global.grav == 1)
         }
     }
     canSave = 0;    //make it so that the player can't save again immediately
-    alarm[0] = 30;  //set alarm so the player can save again
+    alarm[0] = 2;  //set alarm so the player can save again
     image_index = 1;
     image_speed = 0.017;
     scrSaveGame(1);
