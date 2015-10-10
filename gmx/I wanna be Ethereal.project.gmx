@@ -138,6 +138,8 @@
     <script>scripts\scrPlayMusic.gml</script>
     <script>scripts\scrMakeShapes.gml</script>
     <script>scripts\scrMakeCircle.gml</script>
+    <script>scripts\scrInitSoundGain.gml</script>
+    <script>scripts\scrDbToAmplitude.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
