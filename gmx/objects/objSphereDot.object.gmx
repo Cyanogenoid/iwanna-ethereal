@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>origin_x = x
 origin_y = y
-diameter = 400
+radius = 16
 </string>
           </argument>
         </arguments>
@@ -73,8 +73,8 @@ d_z = w - c_z
 x = e_z / d_z * d_x - e_x
 y = e_z / d_z * d_y - e_x
 
-x *= 200;
-y *= 200;
+x *= radius;
+y *= radius;
 
 x += origin_x
 y += origin_y
