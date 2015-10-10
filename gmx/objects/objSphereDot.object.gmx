@@ -83,7 +83,7 @@ y += origin_y
 
 // update object properties to reflect new position
 depth = -w
-scale = (0.875 + w/8) * 0.8
+scale = (0.875 + w/8) * 0.4
 image_xscale = scale
 image_yscale = scale
 image_alpha = 0.75 + w/4

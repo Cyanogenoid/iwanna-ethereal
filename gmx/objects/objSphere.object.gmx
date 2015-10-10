@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>max_groups = 4
-max_lines = 8
-max_dots = 16
-line_spread = 0.1
+max_lines = 4
+max_dots = 4
+line_spread = 0.3
 posttheta = pi/4
 
 for (group = 0; group &lt; max_groups; group++) {
