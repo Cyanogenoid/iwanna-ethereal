@@ -356,8 +356,8 @@ if (keyboard_check(vk_control) &amp;&amp; keyboard_check_pressed(ord("M")) &amp;
 switch (global.currentMusicID) {
     case musSynesthesia:
         pos = audio_sound_get_track_position(global.currentMusic)
-        if (pos &gt;= 214.046234) {
-            audio_sound_set_track_position(global.currentMusic, 1.76162)
+        if (pos &gt;= 213.8) {
+            audio_sound_set_track_position(global.currentMusic, 1.76)
         }
     default:
         // do nothing
