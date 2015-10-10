@@ -24,6 +24,7 @@
       <sound>sound\musMegaman</sound>
       <sound>sound\musOnDeath</sound>
       <sound>sound\musMiku</sound>
+      <sound>sound\musSynesthesia</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
