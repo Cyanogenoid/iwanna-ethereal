@@ -22,4 +22,6 @@ window_set_fullscreen(global.fullscreenMode);
 with (objWorld)
     alarm[0] = 1; //set texture interpolation (have to delay it by a frame for some reason or else it won't get set)
 
+global.saves = 0;  // OH GOD WHY IS THERE NO EMPTY ARRAY IN GML
+    
 scrSaveConfig();

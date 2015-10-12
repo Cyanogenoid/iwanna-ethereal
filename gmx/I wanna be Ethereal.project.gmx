@@ -140,6 +140,7 @@
     <script>scripts\scrMakeCircle.gml</script>
     <script>scripts\scrInitSoundGain.gml</script>
     <script>scripts\scrDbToAmplitude.gml</script>
+    <script>scripts\scrHasSavedBefore.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>

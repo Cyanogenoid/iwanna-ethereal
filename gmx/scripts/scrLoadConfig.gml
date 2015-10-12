@@ -25,4 +25,10 @@ window_set_fullscreen(global.fullscreenMode);
 with (objWorld)
     alarm[0] = 1; //set texture interpolation (have to delay it by a frame for some reason or else it won't get set)
 
+save_count = file_bin_read_byte(f);
+global.saves = 0;
+for (i = 0; i < save_count; i++) {
+    global.saves[i] = file_bin_read_byte(f);
+}
+    
 file_bin_close(f);
