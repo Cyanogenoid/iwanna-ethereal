@@ -20,10 +20,4 @@ file_bin_write_byte(f,global.volumeLevel);
 file_bin_write_byte(f,global.fullscreenMode);
 
 
-save_count = array_length_1d(global.saves);
-file_bin_write_byte(f, save_count);
-for (i = 0; i < save_count; i++) {
-    file_bin_write_byte(f, global.saves[i]);
-}
-
 file_bin_close(f);

@@ -58,6 +58,12 @@ for (var i = 1; i <= 8; i++)
 
 scrWriteBytes(f,global.saveGameClear,1);
 
+save_count = array_length_1d(global.saves);
+scrWriteBytes(f, save_count, 1);
+for (i = 0; i < save_count; i++) {
+    scrWriteBytes(f, global.saves[i], 1);
+}
+
 
 //save md5 hash
 

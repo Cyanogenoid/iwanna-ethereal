@@ -29,6 +29,12 @@ for (var i = 1; i <= 8; i++)
 
 global.saveGameClear = scrReadBytes(f,1);
 
+save_count = scrReadBytes(f, 1);
+global.saves = 0;
+for (i = 0; i < save_count; i++) {
+    global.saves[i] = scrReadBytes(f, 1);
+}
+
 
 //load md5 hash
 
