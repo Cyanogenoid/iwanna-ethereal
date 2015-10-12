@@ -20,4 +20,3 @@ for (i = 0; i < 6; i++) {
     }
     audio_sound_gain(gains[i, 0], gain, 0)
 }
-

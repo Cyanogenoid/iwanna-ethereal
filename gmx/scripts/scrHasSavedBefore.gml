@@ -8,4 +8,3 @@ for (i = array_length_1d(global.saves) - 1; i >= 0; i--) {
     }
 }
 return false;
-
