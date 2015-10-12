@@ -10,6 +10,7 @@ global.savePlayerX = 0;
 global.savePlayerY = 0;
 global.grav = 1;
 global.saveGrav = 1;
+global.saves = 0;
 
 for (var i = 8; i >= 0; i--)
 {
